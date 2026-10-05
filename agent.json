@@ -1,6 +1,6 @@
 {
   "schema": "vivian.lctl-single-agent.v1",
-  "version": "1.0.0",
+  "version": "1.1.1",
   "agent_id": "player_best_reply",
   "display_name": "Best Reply",
   "repository": "vivian-lctl-best-reply-agent",
