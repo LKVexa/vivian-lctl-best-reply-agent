@@ -1,0 +1,15 @@
+{
+  "schema": "vivian.lctl-single-agent.v1",
+  "version": "1.0.0",
+  "agent_id": "player_best_reply",
+  "display_name": "Best Reply",
+  "repository": "vivian-lctl-best-reply-agent",
+  "scaffold": "BOTTLE_ROCKET_5.0.1_VM_110K_RC",
+  "lctl_profile": "LCTLC/1.1",
+  "frozen_source_authority": "4.7.0",
+  "policy_sha256": {
+    "source_sha256": "7645ffa4d1e20cd1b300b22ea985f1f496ebeb02888e7a240aa8f098bc6a989c",
+    "image_sha256": "a54c6c0185fd684bb45f33f105a22cfda2f2a38a592e1e8be5f715cbfc0d0db4",
+    "brir_sha256": "23447d00c5bf5b82e603e57a10cf1827df30143e8cd577bbe84663e357da1b1b"
+  }
+}

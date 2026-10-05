@@ -1,0 +1,17 @@
+LCTLC/1.1
+# Best reply to last observed opponent action, opening belief action 0. Ties choose action 0.
+@unit id=vivian.player_best_reply version=4.7.0 profile=brvm-native entry=A001 target=local-reference backend=brir network=deny replay=deterministic image_version=10 requested_caps=CONTROL|ARITH max_steps=256 termination=bounded
+@defaults mode=CHECKED width=WIDE
+@frame id=F0000 parent=ROOT module=vivian.player_best_reply
+ID|LANE|OP|OUT|CTRL|IN|ARG|META
+A001|player_best_reply|MOVI|R15|C0|_|u64:0|width=WIDE
+A002|player_best_reply|CMP|R13|C0|R1>R15|_|width=WIDE
+A003|player_best_reply|JNZ|_|C0|_|label:A006|_
+A004|player_best_reply|SUB|R12|C0|R5>R3|_|mode=SATURATE;width=WIDE
+A005|player_best_reply|JMP|_|C0|_|label:A007|_
+A006|player_best_reply|SUB|R12|C0|R6>R4|_|mode=SATURATE;width=WIDE
+A007|player_best_reply|CMP|R13|C0|R12>R15|_|width=WIDE
+A008|player_best_reply|JZ|_|C0|_|label:A010|_
+A009|player_best_reply|MOVI|R15|C0|_|u64:1|width=WIDE
+A010|player_best_reply|HALT|_|C0|_|_|_
+@end
